@@ -31,5 +31,8 @@ To ensure all libraries are working properly, please run the following command i
 
        python --version
 
+# Live Share Link
+
+https://prod.liveshare.vsengsaas.visualstudio.com/join?798390E2818AD6C2289BC02D35B7444E64B9
 
 
