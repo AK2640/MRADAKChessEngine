@@ -1,37 +1,40 @@
-import win32gui # type: ignore
-import win32con # type: ignore
-import os
-import time
+import tkinter as tk
+def SubmitCom():
+    global eloText
+    elo = eloText.get("1.0", "end-1c")
+    for widget in root.winfo_children():
+        widget.destroy()
 
+root = tk.Tk()
+w = tk.Label(root, text='MRADAK Engine')
+w.pack(pady=20)
 
-from tkinter import *
-root = Tk()
-w = Label(root, text='MRADAK Engine')
-w.pack()
+eloHelp = tk.Label(root, text='Enter Elo:')
+eloHelp.pack()
+
+eloText = tk.Text(root, height=1, width=8)
+eloText.pack(pady=10)
+
+colourHelp = tk.Label(root, text='Select colour:')
+colourHelp.pack()
+
+OPTIONSBW = ["White", "Black"]
+selectedOptionBW = tk.StringVar(root)
+selectedOptionBW.set(OPTIONSBW[0])
+dropdownMenuBW = tk.OptionMenu(root, selectedOptionBW, *OPTIONSBW)
+dropdownMenuBW.pack(pady=10)
+
+diffHelp = tk.Label(root, text='Select difficulty')
+diffHelp.pack()
+
+OPTIONSDIFF = ["Easy", "Medium", "Hard", "Nightmare"]
+selectedOptionDIFF = tk.StringVar(root)
+selectedOptionDIFF.set(OPTIONSDIFF[0])
+dropdownMenuDIFF = tk.OptionMenu(root, selectedOptionDIFF, *OPTIONSDIFF)
+dropdownMenuDIFF.pack(pady=10)
+
+submitButton = tk.Button(root, text='Submit', command=SubmitCom)
+submitButton.pack()
+
 root.mainloop()
 
-def set_window_title(window_title_string, wait_for_change=False):
-    os.system("title " + window_title_string)
-    if (wait_for_change):
-        matched_window = 0
-        while (matched_window == 0):
-            matched_window = win32gui.FindWindow(None, window_title_string)
-            time.sleep(0.025) # To not flood it too much...
-    
-    return window_title_string
-
-def set_window_icon(window_title, image_path):
-    hwnd = win32gui.FindWindow(None, window_title)
-    icon_flags = win32con.LR_LOADFROMFILE | win32con.LR_DEFAULTSIZE
-    hicon = win32gui.LoadImage(None, image_path, win32con.IMAGE_ICON, 0, 0, icon_flags)
-    
-    win32gui.SendMessage(hwnd, win32con.WM_SETICON, win32con.ICON_SMALL, hicon)
-    win32gui.SendMessage(hwnd, win32con.WM_SETICON, win32con.ICON_BIG, hicon)
-
-def set_title_and_icon(window_title, icon_path):
-    """Set the window title, wait for it to apply, then adjust the icon."""
-    window_title = set_window_title(window_title, wait_for_change=True)
-    set_window_icon(window_title, icon_path)
-    return window_title
-
-set_title_and_icon("MRADAK Engine", "C:\Users\mriegert1234\Downloads\ChessAssets\Icon.ico")
