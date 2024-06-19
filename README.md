@@ -16,6 +16,9 @@ errors persisted in C#, forcing us to migrate to Python. At this point, the proj
 the due date which made it easier to make the entire project on one device. All members contributed 
 equally, even when not writting code however.
 
+It is also important to note that the original GUI was going to be a full chess board, however time
+constraints forced it to be a string that the user can interact with.
+
 # Important Note
 
 To run the code in the program, please download the AVX2 Version of StockFish from https://stockfishchess.org/download/
