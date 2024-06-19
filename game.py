@@ -1,4 +1,4 @@
-# Written By: Aarav Kohli with Mitchel Reigert, and Aaron Dam
+# Written By: Aarav Kohli with Mitchel Riegert, and Aaron Dam
 # Course: ICS3U
 # Date: 6/19/2024
 # Program Description: This program takes in the input parameters
