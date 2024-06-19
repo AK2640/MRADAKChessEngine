@@ -3,15 +3,18 @@ Source code for the MRADAK chess engine written for the ICS3U Culminating.
 
 # Components
 
-The Chess Engine has Three Files: The Engine, the Conversion, and the GUI.
+The Chess Engine has originally had three Files: The Engine, the Conversion, and the GUI.
 
-Engine: The Engine uses the StockFish API, and was written by Aarav Kohli.
+Engine: The Engine uses Python , and was written by Aarav Kohli.
 
 Conversion: The Conversion uses pure Python, and was written by Aaron Dam.
 
-GUI: The GUI was Written using Tkinter and Python, and was Written by Mitchell Riegert and Aarav Kohli.
-     The original version of the engine was written in C#, and the GUI was entirely programmed by Mitchell.
-     Aarav only worked on the Python version, due to time constraints.
+GUI: The GUI was Written using C# by Mitchell Reigert. 
+
+The Chess Engine now has two files: The Setup GUI, and the Game. This is because some technical
+errors persisted in C#, forcing us to migrate to Python. At this point, the project was close to
+the due date which made it easier to make the entire project on one device. All members contributed 
+equally, even when not writting code however.
 
 # IMPORTANT NOTE
 
@@ -31,8 +34,9 @@ To ensure all libraries are working properly, please run the following command i
 
        python --version
 
-# Live Share Link
+# Failed Versions Folder
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?04A3A0DC169E624E56027B2C3BA15FC8C7EA
+As mentioned earlier, there were many failed revisions of this project. The code for each failed file is included
+in a seperate folder to show our work.
 
 
