@@ -9,7 +9,7 @@ Engine: The Engine uses Python , and was written by Aarav Kohli.
 
 Conversion: The Conversion uses pure Python, and was written by Aaron Dam.
 
-GUI: The GUI was Written using C# by Mitchell Reigert. 
+GUI: The GUI was Written using C# by Mitchell Riegert. 
 
 The Chess Engine now has two files: The Setup GUI, and the Game. This is because some technical
 errors persisted in C#, forcing us to migrate to Python. At this point, the project was close to
