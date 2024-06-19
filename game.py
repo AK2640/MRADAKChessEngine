@@ -77,7 +77,7 @@ if colour == 2:
     instructions = Label(root, text="Enter a Move")  # Tell them to enter a move
     moveEntry = Entry(root) # Make the input box
     submit = Button(root, text="Submit", height=1, width=5, command=playMovesBlack) # Submit Button
-    computerText = Label(root, text=stringToGiveUser) # Board Visual
+    computerText = Label(root, text=stringToGiveUser, font=Font_tuple) # Board Visual
 
     # Pack Widgets
     instructions.pack(anchor='w', padx=20, pady=10)
