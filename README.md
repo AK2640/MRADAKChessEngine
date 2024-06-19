@@ -22,8 +22,7 @@ constraints forced it to be a string that the user can interact with.
 # Important Note
 
 To run the code in the program, please download the AVX2 Version of StockFish from https://stockfishchess.org/download/
-Extract the ZIP Folder, and place the: stockfish-windows-x86-64-avx2.exe file in the same directory as the entire project,
-but most importantly engine.py
+Extract the ZIP Folder, and place the: stockfish-windows-x86-64-avx2.exe file in the same directory as the entire project.
 
 Alternatively, the file directory in engine.py can be changed to access the file on the windows operating system.
 
