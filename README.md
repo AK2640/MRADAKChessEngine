@@ -16,7 +16,7 @@ errors persisted in C#, forcing us to migrate to Python. At this point, the proj
 the due date which made it easier to make the entire project on one device. All members contributed 
 equally, even when not writting code however.
 
-# IMPORTANT NOTE
+# Important Note
 
 To run the code in the program, please download the AVX2 Version of StockFish from https://stockfishchess.org/download/
 Extract the ZIP Folder, and place the: stockfish-windows-x86-64-avx2.exe file in the same directory as the entire project,
