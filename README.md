@@ -41,4 +41,16 @@ To ensure all libraries are working properly, please run the following command i
 As mentioned earlier, there were many failed revisions of this project. The code for each failed file is included
 in a seperate folder to show our work.
 
+# Tuning
+
+Given the computational power that stockfish requires, tuning the engine may be neccessary to allow it to run optimally.
+
+To change the amount of CPU Cores and quantity of RAM the engine uses, insert the following command in game.py:
+
+      stockfish.update_engine_parameters({"Hash": 2048, "Threads": 3})
+
+The Hash parameter updates the amount of RAM the engine uses, and must be a power of 2. The threads count can
+be modified depending on your machine specifications, however you should not exceed the number of cores
+your CPU has.
+      
 
