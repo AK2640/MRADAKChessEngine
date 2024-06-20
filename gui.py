@@ -22,6 +22,7 @@ move = ""
 
 root = Tk()
 root.title('MRADAK Engine')
+root.resizable(False, False)
 
 # Function to Set the Player to White
 def setWhite():
